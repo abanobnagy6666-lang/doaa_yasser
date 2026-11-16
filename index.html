@@ -1,0 +1,1244 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doaa Yasser Make-up Artist | دعاء ياسر خبيرة التجميل</title>
+    
+    <!-- Google Fonts: Cairo for modern Arabic UI, Amiri & Playfair Display for luxury editorial headings -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Cairo:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for crisp luxury icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        obsidian: '#0b0a0c',
+                        charcoal: '#141216',
+                        velvet: '#1c1920',
+                        gold: {
+                            light: '#f3e5ab',
+                            DEFAULT: '#d4af37',
+                            dark: '#aa8220',
+                        },
+                        rosegold: '#e0a99a',
+                    },
+                    fontFamily: {
+                        sans: ['Cairo', 'sans-serif'],
+                        serifAr: ['Amiri', 'serif'],
+                        serifEn: ['Playfair Display', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Custom luxury scrollbar & ambient shimmer styling */
+        body {
+            background-color: #0b0a0c;
+            color: #f8f6f2;
+            font-family: 'Cairo', sans-serif;
+            overflow-x: hidden;
+        }
+
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0b0a0c;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: linear-gradient(180deg, #d4af37, #8a6d1c);
+            border-radius: 9999px;
+        }
+
+        .gold-gradient-text {
+            background: linear-gradient(135deg, #f3e5ab 0%, #d4af37 50%, #e0a99a 100%);
+            /* -webkit-background-clip: text; */
+            -webkit-text-fill-color: transparent;
+        }
+
+        .gold-btn {
+            background: linear-gradient(135deg, #d4af37 0%, #f3e5ab 50%, #c59b27 100%);
+            background-size: 200% auto;
+            color: #0b0a0c;
+            transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+        }
+        .gold-btn:hover {
+            background-position: right center;
+            box-shadow: 0 10px 30px -5px rgba(212, 175, 55, 0.45);
+            transform: translateY(-2px);
+        }
+
+        .glass-card {
+            background: rgba(20, 18, 22, 0.72);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(212, 175, 55, 0.16);
+        }
+
+        .glass-card-hover {
+            transition: all 0.4s ease;
+        }
+        .glass-card-hover:hover {
+            border-color: rgba(212, 175, 55, 0.55);
+            transform: translateY(-6px);
+            box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.8), 0 0 25px rgba(212, 175, 55, 0.12);
+        }
+
+        /* Subtle reveal animation */
+        .reveal {
+            opacity: 0;
+            transform: translateY(24px);
+            transition: all 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+        }
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Date/Time input dark theme polish */
+        input[type="date"]::-webkit-calendar-picker-indicator {
+            filter: invert(0.85) sepia(0.4) saturate(2) hue-rotate(5deg);
+            cursor: pointer;
+        }
+    </style>
+
+
+</head>
+<body class="antialiased selection:bg-gold selection:text-obsidian">
+
+    <!-- ==================== 1. STICKY GLASSMORPHIC NAVIGATION BAR ==================== -->
+    <header id="navbar" class="fixed top-0 inset-x-0 z-50 transition-all duration-300 border-b border-gold/15 bg-obsidian/80 backdrop-blur-xl">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                
+                <!-- Brand Logo -->
+                <a href="#home" class="flex items-center gap-3 group">
+                    <div class="w-11 h-11 rounded-full border border-gold/50 bg-charcoal flex items-center justify-center shadow-lg shadow-gold/10 group-hover:border-gold transition-colors">
+                        <span class="font-serifEn text-xl font-bold gold-gradient-text tracking-wider">DY</span>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="font-serifEn text-lg sm:text-xl font-bold tracking-wide text-white leading-none">Doaa Yasser</span>
+                        <span class="text-[11px] sm:text-xs text-gold-light/80 tracking-widest uppercase mt-1">Make-up Artist</span>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation Links -->
+                <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-gray-300">
+                    <a href="#home" class="hover:text-gold-light transition-colors py-2">الرئيسية</a>
+                    <a href="#services" class="hover:text-gold-light transition-colors py-2">الخدمات والباقات</a>
+                    <a href="#portfolio" class="hover:text-gold-light transition-colors py-2">معرض الأعمال</a>
+                    <a href="#testimonials" class="hover:text-gold-light transition-colors py-2">آراء العملاء</a>
+                    <a href="#booking" class="hover:text-gold-light transition-colors py-2">احجزي موعدكِ</a>
+                </nav>
+
+                <!-- Desktop Action Buttons -->
+                <div class="hidden sm:flex items-center gap-3">
+                    <a href="https://wa.me/201090354421" target="_blank" rel="noopener noreferrer" 
+                       class="px-4 py-2.5 rounded-full border border-gold/40 text-gold-light hover:bg-gold/10 text-xs lg:text-sm font-semibold flex items-center gap-2 transition-all">
+                        <i class="fa-brands fa-whatsapp text-base text-emerald-400"></i>
+                        <span>واتساب مباشر</span>
+                    </a>
+                    <a href="#booking" class="gold-btn px-5 py-2.5 rounded-full text-xs lg:text-sm font-bold shadow-md">
+                        احجزي الآن
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Toggle -->
+                <button id="mobile-menu-btn" aria-label="القائمة" class="md:hidden p-2.5 rounded-xl border border-gold/25 text-gold-light hover:bg-charcoal transition">
+                    <i class="fa-solid fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Dropdown Navigation -->
+        <div id="mobile-menu" class="hidden md:hidden bg-charcoal/95 backdrop-blur-2xl border-b border-gold/20 px-6 py-5 space-y-3">
+            <a href="#home" class="mobile-link block py-2.5 text-gray-200 hover:text-gold-light border-b border-white/5">الرئيسية</a>
+            <a href="#services" class="mobile-link block py-2.5 text-gray-200 hover:text-gold-light border-b border-white/5">الخدمات والباقات</a>
+            <a href="#portfolio" class="mobile-link block py-2.5 text-gray-200 hover:text-gold-light border-b border-white/5">معرض الأعمال</a>
+            <a href="#testimonials" class="mobile-link block py-2.5 text-gray-200 hover:text-gold-light border-b border-white/5">آراء العملاء</a>
+            <a href="#booking" class="mobile-link block py-2.5 text-gold-light font-bold">احجزي موعدكِ</a>
+            <div class="pt-3 flex flex-col gap-2.5">
+                <a href="https://wa.me/201090354421" target="_blank" rel="noopener noreferrer"
+                   class="w-full py-3 rounded-xl border border-emerald-500/40 bg-emerald-950/30 text-emerald-300 font-semibold text-center flex items-center justify-center gap-2">
+                    <i class="fa-brands fa-whatsapp text-lg"></i>
+                    <span>تواصلي واتساب: 01090354421</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- ==================== 2. HERO SECTION ==================== -->
+    <section id="home" class="relative min-h-screen flex items-center pt-24 pb-16 overflow-hidden">
+        <!-- Ambient Radial Glows -->
+        <div class="absolute top-1/4 -right-24 w-96 h-96 bg-gold/15 rounded-full blur-[130px] pointer-events-none"></div>
+        <div class="absolute bottom-10 -left-24 w-96 h-96 bg-rosegold/10 rounded-full blur-[130px] pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full relative z-10">
+            <div class="grid lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+                
+                <!-- Hero Text Column -->
+                <div class="lg:col-span-7 text-center lg:text-right space-y-6">
+                    <div class="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-charcoal/90 border border-gold/30 text-gold-light text-xs sm:text-sm font-medium shadow-inner">
+                        <i class="fa-solid fa-sparkles text-gold"></i>
+                        <span>خبيرة التجميل والمكياج الاحترافي • Doaa Yasser</span>
+                    </div>
+
+                    <h1 class="font-serifAr text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight text-white">
+                        إطلالة ساحرة تبرز 
+                        <span class="gold-gradient-text block sm:inline">جمالكِ الطبيعي</span>
+                        في أهم لحظات حياتكِ
+                    </h1>
+
+                    <p class="text-gray-300 text-base sm:text-lg lg:text-xl leading-relaxed max-w-2xl mx-auto lg:mx-0 font-light">
+                        مع <strong class="text-gold-light font-semibold">Doaa Yasser Make-up Artist</strong>، نمنحكِ لمسة فنية راقية تجمع بين نعومة الملامح وفخامة الإطلالة باستخدام أرقى مستحضرات التجميل العالمية لضمان ثبات وإشراقة تدوم طوال الحفل.
+                    </p>
+
+                    <!-- Primary & Secondary CTAs -->
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-3">
+                        <a href="#booking" class="gold-btn w-full sm:w-auto px-8 py-4 rounded-full font-bold text-base flex items-center justify-center gap-3 shadow-xl">
+                            <i class="fa-regular fa-calendar-check text-lg"></i>
+                            <span>احجزي موعدكِ الآن</span>
+                        </a>
+
+                        <a href="https://wa.me/201090354421?text=%D8%A3%D9%87%D9%84%D8%A7%D9%8B%20Doaa%20Yasser%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%A7%D9%84%D8%AD%D8%AC%D8%B2%20%D9%88%D8%A7%D9%84%D8%A8%D8%A7%D9%82%D8%A7%D8%AA" 
+                           target="_blank" rel="noopener noreferrer"
+                           class="w-full sm:w-auto px-8 py-4 rounded-full border border-gold/40 bg-charcoal/70 hover:bg-gold/10 text-white font-semibold text-base flex items-center justify-center gap-3 transition-all">
+                            <i class="fa-brands fa-whatsapp text-xl text-emerald-400"></i>
+                            <span>تواصلي واتساب</span>
+                        </a>
+                    </div>
+
+                    <!-- Trust Highlights -->
+                    <div class="grid grid-cols-3 gap-4 pt-6 border-t border-white/10 max-w-lg mx-auto lg:mx-0">
+                        <div>
+                            <div class="text-2xl sm:text-3xl font-bold gold-gradient-text font-serifEn">+500</div>
+                            <div class="text-xs sm:text-sm text-gray-400 mt-1">عروس وإطلالة مميزة</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl sm:text-3xl font-bold gold-gradient-text font-serifEn">100%</div>
+                            <div class="text-xs sm:text-sm text-gray-400 mt-1">منتجات أصلية فاخرة</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl sm:text-3xl font-bold gold-gradient-text font-serifEn">4.9★</div>
+                            <div class="text-xs sm:text-sm text-gray-400 mt-1">تقييم العميلات</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hero Editorial Portrait Frame -->
+                <div class="lg:col-span-5 relative flex justify-center">
+                    <div class="relative w-full max-w-md">
+                        <!-- Decorative Gold Frame Offset -->
+                        <div class="absolute -inset-3 rounded-[2rem] border border-gold/35 rotate-2 pointer-events-none"></div>
+                        <div class="relative rounded-[2rem] overflow-hidden border border-gold/40 shadow-2xl shadow-black bg-charcoal aspect-[4/5]">
+                            <img src="725258491_1436325655180827_1218403347138366886_n.jpg" 
+                                 onerror="this.src='https://placehold.co/800x1000/141216/d4af37?text=Doaa+Yasser+Make-up'"
+                                 alt="Doaa Yasser Bridal & Luxury Makeup" 
+                                 class="w-full h-full object-cover object-center scale-105 hover:scale-100 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-gradient-to-t from-obsidian via-obsidian/20 to-transparent"></div>
+                            
+                            <!-- Floating Badge on Portrait -->
+                            <div class="absolute bottom-5 inset-x-5 glass-card rounded-2xl p-4 flex items-center justify-between">
+                                <div>
+                                    <p class="text-xs text-gold-light font-semibold">للحجز والاستفسار السريع</p>
+                                    <p class="text-base sm:text-lg font-bold text-white tracking-wider mt-0.5" dir="ltr">01090354421</p>
+                                </div>
+                                <a href="tel:01090354421" class="w-11 h-11 rounded-full gold-btn flex items-center justify-center shadow-lg" aria-label="اتصلي الآن">
+                                    <i class="fa-solid fa-phone text-obsidian"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== 3. SERVICES & PACKAGES SECTION ==================== -->
+    <section id="services" class="py-20 sm:py-28 relative bg-charcoal/50 border-y border-white/5">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <!-- Section Heading -->
+            <div class="text-center max-w-3xl mx-auto mb-16 reveal">
+                <span class="text-gold text-xs sm:text-sm font-bold tracking-widest uppercase">باقات مصممة لجمالكِ</span>
+                <h2 class="font-serifAr text-3xl sm:text-4xl lg:text-5xl font-bold text-white mt-2">
+                    الخدمات <span class="gold-gradient-text">والباقات الفاخرة</span>
+                </h2>
+                <p class="text-gray-400 mt-4 text-sm sm:text-base leading-relaxed">
+                    اختاري الباقة المناسبة لمناسبتكِ الخاصة، مع إمكانية تخصيص كل التفاصيل لتلائم نوع بشرتكِ وذوقكِ الرفيع.
+                </p>
+            </div>
+
+            <!-- 4 Service Cards Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-7">
+                
+                <!-- Card 1: Bridal Makeup (Featured) -->
+                <div class="glass-card glass-card-hover rounded-3xl p-6 sm:p-7 flex flex-col justify-between relative overflow-hidden border-gold/45 reveal">
+                    <div class="absolute top-4 left-4 bg-gold text-obsidian text-[11px] font-extrabold px-3 py-1 rounded-full shadow">
+                        الأكثر طلباً
+                    </div>
+                    <div>
+                        <div class="w-14 h-14 rounded-2xl bg-gold/15 border border-gold/30 flex items-center justify-center text-gold text-2xl mb-5">
+                            <i class="fa-solid fa-crown"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-1">مكياج العرائس</h3>
+                        <p class="text-xs text-gold-light font-medium mb-4">باقة ملكية متكاملة (Bridal VIP)</p>
+                        
+                        <div class="py-3 px-4 rounded-2xl bg-obsidian/70 border border-white/5 mb-5">
+                            <span class="text-xs text-gray-400 block">تبدأ الباقة من</span>
+                            <span class="text-2xl font-extrabold gold-gradient-text">باقة ملكية خاصة</span>
+                        </div>
+
+                        <ul class="space-y-3 text-sm text-gray-300 mb-7">
+                            <li class="flex items-start gap-2.5">
+                                <i class="fa-solid fa-check text-gold mt-1 text-xs"></i>
+                                <span>جلسة تهيئة وترطيب عميق للبشرة قبل المكياج</span>
+                            </li>
+                            <li class="flex items-start gap-2.5">
+                                <i class="fa-solid fa-check text-gold mt-1 text-xs"></i>
+                                <span>مكياج زفاف مقاوم للماء والدموع بثبات 24 ساعة</span>
+                            </li>
+                            <li class="flex items-start gap-2.5">
+                                <i class="fa-solid fa-check text-gold mt-1 text-xs"></i>
+                                <span>رموش طبيعية فاخرة وكونتور احترافي</span>
+                            </li>
+                            <li class="flex items-start gap-2.5">
+                                <i class="fa-solid fa-check text-gold mt-1 text-xs"></i>
+                                <span>تاتش أب ومتابعة قبل التصوير (Photo Session)</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <button type="button" onclick="selectServiceForBooking('مكياج العرائس - باقة ملكية متكاملة')"
+                            class="gold-btn w-full py-3.5 rounded-2xl font-bold text-sm flex items-center justify-center gap-2 cursor-pointer">
+                        <span>اختاري الباقة للحجز</span>
+                        <i class="fa-solid fa-arrow-left text-xs"></i>
+                    </button>
+                </div>
+
+                <!-- Card 2: Evening & Engagement -->
+                <div class="glass-card glass-card-hover rounded-3xl p-6 sm:p-7 flex flex-col justify-between reveal">
+                    <div>
+                        <div class="w-14 h-14 rounded-2xl bg-rosegold/15 border border-rosegold/30 flex items-center justify-center text-rosegold text-2xl mb-5">
+                            <i class="fa-solid fa-gem"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-1">مكياج السهرة والخطوبة</h3>
+                        <p class="text-xs text-rosegold font-medium mb-4">Evening & Engagement Glam</p>
+                        
+                        <div class="py-3 px-4 rounded-2xl bg-obsidian/70 border border-white/5 mb-5">
+                            <span class="text-xs text-gray-400 block">مناسب للحفلات والخطوبة</span>
+                            <span class="text-2xl font-extrabold text-white">إطلالة سهرة ساحرة</span>
+                        </div>
+
+                        <ul class="space-y-3 text-sm text-gray-300 mb-7">
+                            <li class="flex items-start gap-2.5">
+                                <i class="fa-solid fa-check text-gold mt-1 text-xs"></i>
+                                <span>رسمة عيون جذابة تبرز جمال ولون عينيكِ</span>
+                            </li>
+                            <li class="flex items-start gap-2.5">
+                                <i class="fa-solid fa-check text-gold mt-1 text-xs"></i>
+                                <span>إضاءة بشرة مخملية (Dewy أو Matte)</span>
+                            </li>
+                            <li class="flex items-start gap-2.5">
+                                <i class="fa-solid fa-check text-gold mt-1 text-xs"></i>
+                                <span>تركيب رموش عالية الجودة مريحة للعين</span>
+                            </li>
+                            <li class="flex items-start gap-2.5">
+                                <i class="fa-solid fa-check text-gold mt-1 text-xs"></i>
+                                <span>تنسيق الألوان مع فستان الخطوبة أو السهرة</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <button type="button" onclick="selectServiceForBooking('مكياج السهرة والخطوبة')"
+                            class="w-full py-3.5 rounded-2xl border border-gold/45 text-gold-light hover:bg-gold hover:text-obsidian font-bold text-sm flex items-center justify-center gap-2 transition-all cursor-pointer">
+                        <span>اختاري الباقة للحجز</span>
+                        <i class="fa-solid fa-arrow-left text-xs"></i>
+                    </button>
+                </div>
+
+                <!-- Card 3: Soft Glam & Photography -->
+                <div class="glass-card glass-card-hover rounded-3xl p-6 sm:p-7 flex flex-col justify-between reveal">
+                    <div>
+                        <div class="w-14 h-14 rounded-2xl bg-gold/15 border border-gold/30 flex items-center justify-center text-gold-light text-2xl mb-5">
+                            <i class="fa-solid fa-wand-magic-sparkles"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-1">مكياج ناعم / سوفت جلام</h3>
+                        <p class="text-xs text-gold-light font-medium mb-4">Soft Glam & Photo Sessions</p>
+                        
+                        <div class="py-3 px-4 rounded-2xl bg-obsidian/70 border border-white/5 mb-5">
+                            <span class="text-xs text-gray-400 block">للمناسبات النهارية والتصوير</span>
+                            <span class="text-2xl font-extrabold text-white">نعومة طبيعية راقية</span>
+                        </div>
+
+                        <ul class="space-y-3 text-sm text-gray-300 mb-7">
+                            <li class="flex items-start gap-2.5">
+                                <i class="fa-solid fa-check text-gold mt-1 text-xs"></i>
+                                <span>تغطية خفيفة ومشرقة توحد لون البشرة</span>
+                            </li>
+                            <li class="flex items-start gap-2.5">
+                                <i class="fa-solid fa-check text-gold mt-1 text-xs"></i>
+                                <span>ألوان ترابية ووردية هادئة تناسب الإضاءة الطبيعية</span>
+                            </li>
+                            <li class="flex items-start gap-2.5">
+                                <i class="fa-solid fa-check text-gold mt-1 text-xs"></i>
+                                <span>مثالي لجلسات التصوير وأعياد الميلاد</span>
+                            </li>
+                            <li class="flex items-start gap-2.5">
+                                <i class="fa-solid fa-check text-gold mt-1 text-xs"></i>
+                                <span>إبراز الملامح بدون تكلف أو طبقات ثقيلة</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <button type="button" onclick="selectServiceForBooking('مكياج ناعم / سوفت جلام')"
+                            class="w-full py-3.5 rounded-2xl border border-gold/45 text-gold-light hover:bg-gold hover:text-obsidian font-bold text-sm flex items-center justify-center gap-2 transition-all cursor-pointer">
+                        <span>اختاري الباقة للحجز</span>
+                        <i class="fa-solid fa-arrow-left text-xs"></i>
+                    </button>
+                </div>
+
+                <!-- Card 4: Skin Prep -->
+                <div class="glass-card glass-card-hover rounded-3xl p-6 sm:p-7 flex flex-col justify-between reveal">
+                    <div>
+                        <div class="w-14 h-14 rounded-2xl bg-rosegold/15 border border-rosegold/30 flex items-center justify-center text-rosegold text-2xl mb-5">
+                            <i class="fa-solid fa-spa"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-1">العناية وتهيئة البشرة</h3>
+                        <p class="text-xs text-rosegold font-medium mb-4">Luxury Skin Prep Session</p>
+                        
+                        <div class="py-3 px-4 rounded-2xl bg-obsidian/70 border border-white/5 mb-5">
+                            <span class="text-xs text-gray-400 block">سر ثبات ونضارة المكياج</span>
+                            <span class="text-2xl font-extrabold text-white">نضارة فورية</span>
+                        </div>
+
+                        <ul class="space-y-3 text-sm text-gray-300 mb-7">
+                            <li class="flex items-start gap-2.5">
+                                <i class="fa-solid fa-check text-gold mt-1 text-xs"></i>
+                                <span>تنظيف لطيف وإزالة القشور الجافة</span>
+                            </li>
+                            <li class="flex items-start gap-2.5">
+                                <i class="fa-solid fa-check text-gold mt-1 text-xs"></i>
+                                <span>سيرومات ترطيب وتغذية مخصصة لنوع بشرتكِ</span>
+                            </li>
+                            <li class="flex items-start gap-2.5">
+                                <i class="fa-solid fa-check text-gold mt-1 text-xs"></i>
+                                <span>مساج خفيف لتنشيط الدورة الدموية وتقليل الانتفاخ</span>
+                            </li>
+                            <li class="flex items-start gap-2.5">
+                                <i class="fa-solid fa-check text-gold mt-1 text-xs"></i>
+                                <span>يمنح المكياج مظهراً انسيابياً كالحرير</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <button type="button" onclick="selectServiceForBooking('العناية بالبشرة وتهيئتها قبل المكياج')"
+                            class="w-full py-3.5 rounded-2xl border border-gold/45 text-gold-light hover:bg-gold hover:text-obsidian font-bold text-sm flex items-center justify-center gap-2 transition-all cursor-pointer">
+                        <span>اختاري الباقة للحجز</span>
+                        <i class="fa-solid fa-arrow-left text-xs"></i>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== 4. PORTFOLIO / GALLERY SECTION ==================== -->
+    <section id="portfolio" class="py-20 sm:py-28 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-3xl mx-auto mb-12 reveal">
+                <span class="text-gold text-xs sm:text-sm font-bold tracking-widest uppercase">لمسات فنية حقيقية</span>
+                <h2 class="font-serifAr text-3xl sm:text-4xl lg:text-5xl font-bold text-white mt-2">
+                    معرض <span class="gold-gradient-text">أعمالنا المختارة</span>
+                </h2>
+                <p class="text-gray-400 mt-4 text-sm sm:text-base">
+                    استكشفي تنوع الإطلالات بين مكياج العرائس الملكي، إطلالات السهرة الجذابة، والسوفت جلام الناعم.
+                </p>
+
+                <!-- Filter Tabs -->
+                <div class="flex flex-wrap items-center justify-center gap-2.5 sm:gap-3 mt-8" id="gallery-filters">
+                    <button type="button" data-filter="all" class="filter-btn active px-6 py-2.5 rounded-full text-sm font-bold bg-gold text-obsidian transition-all cursor-pointer">
+                        الكل
+                    </button>
+                    <button type="button" data-filter="bridal" class="filter-btn px-6 py-2.5 rounded-full text-sm font-semibold bg-charcoal text-gray-300 border border-gold/25 hover:border-gold transition-all cursor-pointer">
+                        عرائس
+                    </button>
+                    <button type="button" data-filter="evening" class="filter-btn px-6 py-2.5 rounded-full text-sm font-semibold bg-charcoal text-gray-300 border border-gold/25 hover:border-gold transition-all cursor-pointer">
+                        سهرات
+                    </button>
+                    <button type="button" data-filter="soft" class="filter-btn px-6 py-2.5 rounded-full text-sm font-semibold bg-charcoal text-gray-300 border border-gold/25 hover:border-gold transition-all cursor-pointer">
+                        سوفت جلام
+                    </button>
+                </div>
+            </div>
+
+            <!-- Gallery Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8" id="gallery-grid">
+                
+                <!-- Item 1: Bridal -->
+                <div class="gallery-item group relative rounded-3xl overflow-hidden border border-gold/20 bg-charcoal aspect-[4/5] shadow-xl" data-category="bridal">
+                    <img src="https://images.unsplash.com/photo-1594465919760-441fe5908ab0?auto=format&fit=crop&w=800&q=85"
+                         onerror="this.src='https://placehold.co/600x750/141216/d4af37?text=Bridal+Look'"
+                         alt="إطلالة عروس ملكية" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-obsidian via-obsidian/30 to-transparent opacity-85 group-hover:opacity-95 transition-opacity"></div>
+                    <div class="absolute bottom-0 inset-x-0 p-6 translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
+                        <span class="inline-block px-3 py-1 rounded-full bg-gold/20 border border-gold/40 text-gold-light text-xs font-semibold mb-2">عرائس</span>
+                        <h3 class="text-xl font-bold text-white">إطلالة العروس الملكية</h3>
+                        <p class="text-xs text-gray-300 mt-1">دمج ناعم بدرجات الشامبين والبرونز الدافئ</p>
+                    </div>
+                </div>
+
+                <!-- Item 2: Evening -->
+                <div class="gallery-item group relative rounded-3xl overflow-hidden border border-gold/20 bg-charcoal aspect-[4/5] shadow-xl" data-category="evening">
+                    <img src="https://images.unsplash.com/photo-1522337660859-02fbefca4702?auto=format&fit=crop&w=800&q=85"
+                         onerror="this.src='https://placehold.co/600x750/141216/e0a99a?text=Evening+Glam'"
+                         alt="مكياج سهرة وخطوبة" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-obsidian via-obsidian/30 to-transparent opacity-85 group-hover:opacity-95 transition-opacity"></div>
+                    <div class="absolute bottom-0 inset-x-0 p-6 translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
+                        <span class="inline-block px-3 py-1 rounded-full bg-rosegold/20 border border-rosegold/40 text-rosegold text-xs font-semibold mb-2">سهرات</span>
+                        <h3 class="text-xl font-bold text-white">سحر السهرة والخطوبة</h3>
+                        <p class="text-xs text-gray-300 mt-1">سموكي دافئ مع إضاءة بشرة مخملية</p>
+                    </div>
+                </div>
+
+                <!-- Item 3: Soft Glam -->
+                <div class="gallery-item group relative rounded-3xl overflow-hidden border border-gold/20 bg-charcoal aspect-[4/5] shadow-xl" data-category="soft">
+                    <img src="https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?auto=format&fit=crop&w=800&q=85"
+                         onerror="this.src='https://placehold.co/600x750/141216/f3e5ab?text=Soft+Glam'"
+                         alt="سوفت جلام ناعم" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-obsidian via-obsidian/30 to-transparent opacity-85 group-hover:opacity-95 transition-opacity"></div>
+                    <div class="absolute bottom-0 inset-x-0 p-6 translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
+                        <span class="inline-block px-3 py-1 rounded-full bg-gold/20 border border-gold/40 text-gold-light text-xs font-semibold mb-2">سوفت جلام</span>
+                        <h3 class="text-xl font-bold text-white">سوفت جلام طبيعي</h3>
+                        <p class="text-xs text-gray-300 mt-1">لمسة وردية مشرقة تبرز نعومة الملامح</p>
+                    </div>
+                </div>
+
+                <!-- Item 4: Bridal -->
+                <div class="gallery-item group relative rounded-3xl overflow-hidden border border-gold/20 bg-charcoal aspect-[4/5] shadow-xl" data-category="bridal">
+                    <img src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?auto=format&fit=crop&w=800&q=85"
+                         onerror="this.src='https://placehold.co/600x750/141216/d4af37?text=Bridal+Elegance'"
+                         alt="عروس كلاسيك" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-obsidian via-obsidian/30 to-transparent opacity-85 group-hover:opacity-95 transition-opacity"></div>
+                    <div class="absolute bottom-0 inset-x-0 p-6 translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
+                        <span class="inline-block px-3 py-1 rounded-full bg-gold/20 border border-gold/40 text-gold-light text-xs font-semibold mb-2">عرائس</span>
+                        <h3 class="text-xl font-bold text-white">عروس الفخامة الكلاسيكية</h3>
+                        <p class="text-xs text-gray-300 mt-1">تحديد مثالي للعيون وبشرة صافية كاللؤلؤ</p>
+                    </div>
+                </div>
+
+                <!-- Item 5: Evening -->
+                <div class="gallery-item group relative rounded-3xl overflow-hidden border border-gold/20 bg-charcoal aspect-[4/5] shadow-xl" data-category="evening">
+                    <img src="https://images.unsplash.com/photo-1526045478516-99145907023c?auto=format&fit=crop&w=800&q=85"
+                         onerror="this.src='https://placehold.co/600x750/141216/e0a99a?text=Golden+Night'"
+                         alt="مكياج ذهبي للسهرة" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-obsidian via-obsidian/30 to-transparent opacity-85 group-hover:opacity-95 transition-opacity"></div>
+                    <div class="absolute bottom-0 inset-x-0 p-6 translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
+                        <span class="inline-block px-3 py-1 rounded-full bg-rosegold/20 border border-rosegold/40 text-rosegold text-xs font-semibold mb-2">سهرات</span>
+                        <h3 class="text-xl font-bold text-white">بريق الذهب والبرونز</h3>
+                        <p class="text-xs text-gray-300 mt-1">إطلالة مسائية جريئة تخطف الأنظار</p>
+                    </div>
+                </div>
+
+                <!-- Item 6: Soft Glam -->
+                <div class="gallery-item group relative rounded-3xl overflow-hidden border border-gold/20 bg-charcoal aspect-[4/5] shadow-xl" data-category="soft">
+                    <img src="https://images.unsplash.com/photo-1503236823255-94609f598e71?auto=format&fit=crop&w=800&q=85"
+                         onerror="this.src='https://placehold.co/600x750/141216/f3e5ab?text=Glow+Look'"
+                         alt="إطلالة جلسة تصوير" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-obsidian via-obsidian/30 to-transparent opacity-85 group-hover:opacity-95 transition-opacity"></div>
+                    <div class="absolute bottom-0 inset-x-0 p-6 translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
+                        <span class="inline-block px-3 py-1 rounded-full bg-gold/20 border border-gold/40 text-gold-light text-xs font-semibold mb-2">سوفت جلام</span>
+                        <h3 class="text-xl font-bold text-white">إشراقة جلسات التصوير</h3>
+                        <p class="text-xs text-gray-300 mt-1">توازن مثالي للإضاءة الاحترافية والكاميرات</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== 5. CLIENT TESTIMONIALS ==================== -->
+    <section id="testimonials" class="py-20 sm:py-28 bg-charcoal/60 border-y border-white/5 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            
+            <div class="text-center max-w-3xl mx-auto mb-16 reveal">
+                <span class="text-gold text-xs sm:text-sm font-bold tracking-widest uppercase">ثقة نعتز بها</span>
+                <h2 class="font-serifAr text-3xl sm:text-4xl lg:text-5xl font-bold text-white mt-2">
+                    آراء <span class="gold-gradient-text">الجميلات والعرائس</span>
+                </h2>
+                <p class="text-gray-400 mt-4 text-sm sm:text-base">
+                    سعادة كل عروس وعميلة هي سر شغفنا المستمر لتقديم الأفضل دائماً.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-7">
+                
+                <!-- Review 1 -->
+                <div class="glass-card rounded-3xl p-7 flex flex-col justify-between reveal">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <div class="flex text-gold text-sm gap-1">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <i class="fa-solid fa-quote-left text-gold/25 text-3xl"></i>
+                        </div>
+                        <p class="text-gray-300 text-sm sm:text-base leading-relaxed mb-6">
+                            "بجد من أجمل القرارات اللي أخدتها يوم فرحي إني حجزت مع دعاء ياسر! المكياج كان ناعم وفخم جداً وفضل ثابت لآخر لحظة في الفرح من غير ما يخطط أو يتأثر."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3.5 pt-4 border-t border-white/10">
+                        <div class="w-11 h-11 rounded-full bg-gold/20 border border-gold/40 flex items-center justify-center font-bold text-gold-light">
+                            م
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-white text-sm">مريم محمود</h4>
+                            <span class="text-xs text-gold-light">عروس • باقة الزفاف الملكية</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 2 -->
+                <div class="glass-card rounded-3xl p-7 flex flex-col justify-between reveal">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <div class="flex text-gold text-sm gap-1">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <i class="fa-solid fa-quote-left text-gold/25 text-3xl"></i>
+                        </div>
+                        <p class="text-gray-300 text-sm sm:text-base leading-relaxed mb-6">
+                            "ذوقها راقي جداً وبتفهم إيه اللي يليق على ملامح الوش من أول نظرة. عملت عندها مكياج خطوبتي وكل المعازيم سألوني مين الميكب آرتست من كتر ما اللوك كان طبيعي وساحر."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3.5 pt-4 border-t border-white/10">
+                        <div class="w-11 h-11 rounded-full bg-rosegold/20 border border-rosegold/40 flex items-center justify-center font-bold text-rosegold">
+                            ن
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-white text-sm">نوران طارق</h4>
+                            <span class="text-xs text-rosegold">مكياج خطوبة</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 3 -->
+                <div class="glass-card rounded-3xl p-7 flex flex-col justify-between reveal">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <div class="flex text-gold text-sm gap-1">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <i class="fa-solid fa-quote-left text-gold/25 text-3xl"></i>
+                        </div>
+                        <p class="text-gray-300 text-sm sm:text-base leading-relaxed mb-6">
+                            "الماتيريال كلها براندات أصلية والاهتمام بتحضير البشرة قبل الميكب فرق معايا جداً. تعامل راقي ومواعيد مظبوطة بالدقيقة، ربنا يوفقك دايماً يا دعاء."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3.5 pt-4 border-t border-white/10">
+                        <div class="w-11 h-11 rounded-full bg-gold/20 border border-gold/40 flex items-center justify-center font-bold text-gold-light">
+                            س
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-white text-sm">سارة عبد الرحمن</h4>
+                            <span class="text-xs text-gold-light">سوفت جلام وسهرة</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== 6. INTERACTIVE BOOKING SYSTEM ==================== -->
+    <section id="booking" class="py-20 sm:py-28 relative">
+        <!-- Ambient Glow -->
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-gold/10 rounded-full blur-[150px] pointer-events-none"></div>
+
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="glass-card rounded-[2.25rem] p-6 sm:p-10 lg:p-14 border-gold/30 shadow-2xl">
+                
+                <div class="grid lg:grid-cols-12 gap-10 lg:gap-12 items-start">
+                    
+                    <!-- Left Info Column -->
+                    <div class="lg:col-span-5 space-y-6">
+                        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-gold/15 border border-gold/30 text-gold-light text-xs font-bold">
+                            <i class="fa-regular fa-calendar-star"></i>
+                            <span>حجز فوري ومؤكد</span>
+                        </span>
+
+                        <h2 class="font-serifAr text-3xl sm:text-4xl font-bold text-white leading-snug">
+                            احجزي موعدكِ الآن مع <span class="gold-gradient-text">Doaa Yasser</span>
+                        </h2>
+
+                        <p class="text-gray-300 text-sm sm:text-base leading-relaxed">
+                            املئي بيانات الحجز وسيتم تجهيز رسالة الحجز تلقائياً لإرسالها مباشرة عبر واتساب لتأكيد الموعد والرد على كافة استفساراتكِ.
+                        </p>
+
+                        <!-- Direct Contact Card -->
+                        <div class="p-5 rounded-2xl bg-obsidian/80 border border-gold/25 space-y-4">
+                            <div class="flex items-center gap-4">
+                                <div class="w-12 h-12 rounded-2xl bg-emerald-500/15 border border-emerald-500/30 flex items-center justify-center text-emerald-400 text-2xl shrink-0">
+                                    <i class="fa-brands fa-whatsapp"></i>
+                                </div>
+                                <div>
+                                    <p class="text-xs text-gray-400">رقم الحجز والواتساب المباشر</p>
+                                    <a href="tel:01090354421" class="text-lg sm:text-xl font-bold text-white hover:text-gold-light transition tracking-wider" dir="ltr">
+                                        01090354421
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="pt-3 border-t border-white/10 text-xs text-gray-400 space-y-2">
+                                <p class="flex items-center gap-2">
+                                    <i class="fa-solid fa-circle-check text-gold"></i>
+                                    <span>يفضل الحجز المسبق لضمان توفر الموعد المناسب لكِ.</span>
+                                </p>
+                                <p class="flex items-center gap-2">
+                                    <i class="fa-solid fa-circle-check text-gold"></i>
+                                    <span>متاح الحجز داخل الاستوديو أو خارجياً حسب الاتفاق.</span>
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Saved Local Bookings Preview (if any) -->
+                        <div id="saved-bookings-box" class="hidden p-4 rounded-2xl bg-charcoal/90 border border-gold/30">
+                            <div class="flex items-center justify-between mb-2">
+                                <span class="text-xs font-bold text-gold-light flex items-center gap-1.5">
+                                    <i class="fa-solid fa-bookmark"></i>
+                                    <span>آخر حجز مسجل على جهازكِ:</span>
+                                </span>
+                                <button type="button" onclick="clearSavedBooking()" class="text-[11px] text-gray-400 hover:text-red-400">مسح</button>
+                            </div>
+                            <div id="saved-booking-details" class="text-xs text-gray-300 space-y-1"></div>
+                        </div>
+                    </div>
+
+                    <!-- Right Interactive Form Column -->
+                    <div class="lg:col-span-7">
+                        <form id="booking-form" class="space-y-5" novalidate>
+                            
+                            <!-- Validation Message Box (No alert() used) -->
+                            <div id="form-feedback" class="hidden p-4 rounded-2xl text-sm font-medium flex items-center gap-3"></div>
+
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                                <!-- Full Name -->
+                                <div>
+                                    <label for="clientName" class="block text-sm font-semibold text-gray-200 mb-2">
+                                        الاسم بالكامل <span class="text-gold">*</span>
+                                    </label>
+                                    <div class="relative">
+                                        <span class="absolute inset-y-0 right-4 flex items-center text-gold/70">
+                                            <i class="fa-regular fa-user"></i>
+                                        </span>
+                                        <input type="text" id="clientName" name="clientName" required placeholder="اكتبي اسمكِ هنا..."
+                                               class="w-full pr-11 pl-4 py-3.5 rounded-2xl bg-obsidian/90 border border-white/15 focus:border-gold focus:ring-1 focus:ring-gold text-white placeholder-gray-500 text-sm outline-none transition">
+                                    </div>
+                                </div>
+
+                                <!-- Phone / WhatsApp -->
+                                <div>
+                                    <label for="clientPhone" class="block text-sm font-semibold text-gray-200 mb-2">
+                                        رقم الهاتف / الواتساب <span class="text-gold">*</span>
+                                    </label>
+                                    <div class="relative">
+                                        <span class="absolute inset-y-0 right-4 flex items-center text-gold/70">
+                                            <i class="fa-solid fa-mobile-screen-button"></i>
+                                        </span>
+                                        <input type="tel" id="clientPhone" name="clientPhone" required placeholder="01xxxxxxxxx" dir="ltr"
+                                               class="w-full pr-11 pl-4 py-3.5 rounded-2xl bg-obsidian/90 border border-white/15 focus:border-gold focus:ring-1 focus:ring-gold text-white placeholder-gray-500 text-sm text-right outline-none transition">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Service / Package Dropdown -->
+                            <div>
+                                <label for="serviceType" class="block text-sm font-semibold text-gray-200 mb-2">
+                                    نوع الخدمة / الباقة المطلوبة <span class="text-gold">*</span>
+                                </label>
+                                <div class="relative">
+                                    <span class="absolute inset-y-0 right-4 flex items-center text-gold/70">
+                                        <i class="fa-solid fa-sparkles"></i>
+                                    </span>
+                                    <select id="serviceType" name="serviceType" required
+                                            class="w-full pr-11 pl-4 py-3.5 rounded-2xl bg-obsidian/90 border border-white/15 focus:border-gold focus:ring-1 focus:ring-gold text-white text-sm outline-none transition appearance-none cursor-pointer">
+                                        <option value="" disabled selected>-- اختاري الباقة المناسبة --</option>
+                                        <option value="مكياج العرائس - باقة ملكية متكاملة">مكياج العرائس - باقة ملكية متكاملة (Bridal VIP)</option>
+                                        <option value="مكياج السهرة والخطوبة">مكياج السهرة والخطوبة (Evening & Engagement)</option>
+                                        <option value="مكياج ناعم / سوفت جلام">مكياج ناعم / سوفت جلام (Soft Glam)</option>
+                                        <option value="العناية بالبشرة وتهيئتها قبل المكياج">العناية بالبشرة وتهيئتها قبل المكياج (Skin Prep)</option>
+                                        <option value="استفسار عن باقة مخصصة / مجموعة">استفسار عن باقة مخصصة / مجموعة</option>
+                                    </select>
+                                    <span class="absolute inset-y-0 left-4 flex items-center text-gray-400 pointer-events-none">
+                                        <i class="fa-solid fa-chevron-down text-xs"></i>
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                                <!-- Event Date -->
+                                <div>
+                                    <label for="eventDate" class="block text-sm font-semibold text-gray-200 mb-2">
+                                        تاريخ المناسبة <span class="text-gold">*</span>
+                                    </label>
+                                    <div class="relative">
+                                        <input type="date" id="eventDate" name="eventDate" required
+                                               class="w-full px-4 py-3.5 rounded-2xl bg-obsidian/90 border border-white/15 focus:border-gold focus:ring-1 focus:ring-gold text-white text-sm outline-none transition">
+                                    </div>
+                                </div>
+
+                                <!-- Preferred Time Slot -->
+                                <div>
+                                    <label for="timeSlot" class="block text-sm font-semibold text-gray-200 mb-2">
+                                        الوقت المفضل <span class="text-gold">*</span>
+                                    </label>
+                                    <div class="relative">
+                                        <span class="absolute inset-y-0 right-4 flex items-center text-gold/70">
+                                            <i class="fa-regular fa-clock"></i>
+                                        </span>
+                                        <select id="timeSlot" name="timeSlot" required
+                                                class="w-full pr-11 pl-4 py-3.5 rounded-2xl bg-obsidian/90 border border-white/15 focus:border-gold focus:ring-1 focus:ring-gold text-white text-sm outline-none transition appearance-none cursor-pointer">
+                                            <option value="" disabled selected>-- اختاري الفترة المناسبة --</option>
+                                            <option value="فترة صباحية (10:00 ص - 1:00 م)">فترة صباحية (10:00 ص - 1:00 م)</option>
+                                            <option value="فترة الظهيرة (1:00 م - 4:00 م)">فترة الظهيرة (1:00 م - 4:00 م)</option>
+                                            <option value="فترة مسائية (4:00 م - 7:00 م)">فترة مسائية (4:00 م - 7:00 م)</option>
+                                            <option value="سهرة متأخرة (بعد 7:00 م)">سهرة متأخرة (بعد 7:00 م)</option>
+                                        </select>
+                                        <span class="absolute inset-y-0 left-4 flex items-center text-gray-400 pointer-events-none">
+                                            <i class="fa-solid fa-chevron-down text-xs"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Additional Notes -->
+                            <div>
+                                <label for="notes" class="block text-sm font-semibold text-gray-200 mb-2">
+                                    ملاحظات إضافية (اختياري)
+                                </label>
+                                <textarea id="notes" name="notes" rows="3" placeholder="أخبرينا بنوع بشرتكِ، مكان المناسبة، أو أي تفاصيل تودين إضافتها..."
+                                          class="w-full px-4 py-3 rounded-2xl bg-obsidian/90 border border-white/15 focus:border-gold focus:ring-1 focus:ring-gold text-white placeholder-gray-500 text-sm outline-none transition resize-none"></textarea>
+                            </div>
+
+                            <!-- Submit & Local Save Buttons -->
+                            <div class="pt-2 flex flex-col sm:flex-row gap-3.5">
+                                <button type="submit" class="gold-btn flex-1 py-4 px-6 rounded-2xl font-extrabold text-sm sm:text-base flex items-center justify-center gap-2.5 shadow-xl cursor-pointer">
+                                    <i class="fa-brands fa-whatsapp text-xl"></i>
+                                    <span>تأكيد وإرسال عبر واتساب</span>
+                                </button>
+
+                                <button type="button" id="save-local-btn"
+                                        class="py-4 px-5 rounded-2xl border border-gold/40 bg-obsidian/80 hover:bg-gold/10 text-gold-light font-semibold text-sm flex items-center justify-center gap-2 transition cursor-pointer">
+                                    <i class="fa-regular fa-bookmark"></i>
+                                    <span>حفظ في سجل الحجوزات</span>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== BOOKING CONFIRMATION MODAL ==================== -->
+    <div id="confirmation-modal" class="fixed inset-0 z-50 hidden items-center justify-center p-4 bg-black/80 backdrop-blur-md">
+        <div class="glass-card border-gold/50 rounded-3xl max-w-md w-full p-6 sm:p-8 text-center space-y-5 shadow-2xl transform transition-all">
+            <div class="w-16 h-16 rounded-full bg-emerald-500/20 border border-emerald-400/50 text-emerald-400 flex items-center justify-center text-3xl mx-auto">
+                <i class="fa-solid fa-check"></i>
+            </div>
+            <h3 class="font-serifAr text-2xl sm:text-3xl font-bold text-white">تم تجهيز حجزكِ بنجاح!</h3>
+            <p class="text-sm text-gray-300 leading-relaxed">
+                شكراً لكِ <span id="modal-client-name" class="text-gold-light font-bold"></span>. يمكنكِ الآن إرسال تفاصيل الحجز مباشرة إلى واتساب <strong class="text-white">Doaa Yasser</strong> لتأكيد الموعد.
+            </p>
+            
+            <div id="modal-summary" class="text-right p-4 rounded-2xl bg-obsidian/90 border border-white/10 text-xs sm:text-sm text-gray-300 space-y-2">
+                <!-- Populated dynamically -->
+            </div>
+
+            <div class="flex flex-col gap-3 pt-2">
+                <a id="modal-whatsapp-link" href="#" target="_blank" rel="noopener noreferrer"
+                   class="gold-btn w-full py-3.5 rounded-2xl font-bold text-sm sm:text-base flex items-center justify-center gap-2">
+                    <i class="fa-brands fa-whatsapp text-xl"></i>
+                    <span>فتح واتساب وإرسال الحجز الآن</span>
+                </a>
+                <button type="button" onclick="closeConfirmationModal()" class="w-full py-2.5 rounded-xl text-xs text-gray-400 hover:text-white transition">
+                    إغلاق النافذة
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== 7. FOOTER & FLOATING ACTION BUTTON ==================== -->
+    <footer class="bg-obsidian border-t border-gold/20 pt-16 pb-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10 pb-12 border-b border-white/10">
+                
+                <!-- Brand Info -->
+                <div class="space-y-4">
+                    <div class="flex items-center gap-3">
+                        <div class="w-11 h-11 rounded-full border border-gold/50 bg-charcoal flex items-center justify-center">
+                            <span class="font-serifEn text-xl font-bold gold-gradient-text">DY</span>
+                        </div>
+                        <div>
+                            <h3 class="font-serifEn text-xl font-bold text-white">Doaa Yasser</h3>
+                            <p class="text-xs text-gold-light tracking-widest uppercase">Make-up Artist</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-400 text-sm leading-relaxed max-w-sm">
+                        نؤمن بأن كل امرأة تستحق أن تتألق في يومها المميز بإطلالة تعكس شخصيتها وجمالها الطبيعي بأرقى معايير الاحترافية.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="space-y-4">
+                    <h4 class="text-white font-bold text-base">روابط سريعة</h4>
+                    <ul class="space-y-2.5 text-sm text-gray-400">
+                        <li><a href="#home" class="hover:text-gold-light transition">الرئيسية</a></li>
+                        <li><a href="#services" class="hover:text-gold-light transition">الخدمات والباقات</a></li>
+                        <li><a href="#portfolio" class="hover:text-gold-light transition">معرض الأعمال</a></li>
+                        <li><a href="#testimonials" class="hover:text-gold-light transition">آراء الجميلات</a></li>
+                        <li><a href="#booking" class="hover:text-gold-light transition">احجزي موعدكِ</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact & Social -->
+                <div class="space-y-4">
+                    <h4 class="text-white font-bold text-base">تواصلي معنا</h4>
+                    <div class="space-y-3 text-sm">
+                        <a href="tel:01090354421" class="flex items-center gap-3 text-gray-300 hover:text-gold-light transition">
+                            <span class="w-9 h-9 rounded-full bg-charcoal border border-gold/30 flex items-center justify-center text-gold">
+                                <i class="fa-solid fa-phone"></i>
+                            </span>
+                            <span dir="ltr" class="font-bold tracking-wider">01090354421</span>
+                        </a>
+                        <a href="https://wa.me/201090354421" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 text-gray-300 hover:text-emerald-400 transition">
+                            <span class="w-9 h-9 rounded-full bg-charcoal border border-emerald-500/30 flex items-center justify-center text-emerald-400">
+                                <i class="fa-brands fa-whatsapp text-base"></i>
+                            </span>
+                            <span>واتساب مباشر للحجز والاستفسار</span>
+                        </a>
+                    </div>
+
+                    <!-- Social Media Icons -->
+                    <div class="flex items-center gap-3 pt-2">
+                        <a href="https://wa.me/201090354421" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"
+                           class="w-10 h-10 rounded-full bg-charcoal border border-gold/25 hover:border-gold hover:bg-gold hover:text-obsidian text-gold-light flex items-center justify-center transition">
+                            <i class="fa-brands fa-whatsapp text-lg"></i>
+                        </a>
+                        <a href="#booking" aria-label="Instagram"
+                           class="w-10 h-10 rounded-full bg-charcoal border border-gold/25 hover:border-gold hover:bg-gold hover:text-obsidian text-gold-light flex items-center justify-center transition">
+                            <i class="fa-brands fa-instagram text-lg"></i>
+                        </a>
+                        <a href="https://www.facebook.com/profile.php?id=100064102180118&sk=directory_contact_info&locale=ar_AR" aria-label="Facebook"
+                           class="w-10 h-10 rounded-full bg-charcoal border border-gold/25 hover:border-gold hover:bg-gold hover:text-obsidian text-gold-light flex items-center justify-center transition">
+                            <i class="fa-brands fa-facebook-f text-base"></i>
+                        </a>
+                        <a href="#booking" aria-label="TikTok"
+                           class="w-10 h-10 rounded-full bg-charcoal border border-gold/25 hover:border-gold hover:bg-gold hover:text-obsidian text-gold-light flex items-center justify-center transition">
+                            <i class="fa-brands fa-tiktok text-base"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-gray-500">
+                <p>© <span id="current-year"></span> Doaa Yasser Make-up Artist. جميع الحقوق محفوظة.</p>
+                <p>صُمم بكل حب وأناقة لإبراز جمالكِ ✨</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Action Button -->
+    <a href="https://wa.me/201090354421?text=%D8%A3%D9%87%D9%84%D8%A7%D9%8B%20Doaa%20Yasser%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%AD%D8%AC%D8%B2" 
+       target="_blank" rel="noopener noreferrer" aria-label="تواصلي عبر واتساب"
+       class="fixed bottom-6 left-6 z-40 group flex items-center gap-3 bg-emerald-600 hover:bg-emerald-500 text-white px-4 py-3.5 rounded-full shadow-2xl shadow-emerald-950/80 transition-all duration-300 hover:scale-105">
+        <i class="fa-brands fa-whatsapp text-2xl"></i>
+        <span class="hidden sm:inline text-sm font-bold pr-1">تواصلي واتساب</span>
+    </a>
+
+    <!-- ==================== INTERACTIVE JAVASCRIPT LOGIC ==================== -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // 1. Set current year & minimum booking date (today)
+            document.getElementById('current-year').textContent = new Date().getFullYear();
+            const dateInput = document.getElementById('eventDate');
+            if (dateInput) {
+                const today = new Date().toISOString().split('T')[0];
+                dateInput.setAttribute('min', today);
+            }
+
+            // 2. Mobile Navigation Toggle
+            const mobileBtn = document.getElementById('mobile-menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+
+            document.querySelectorAll('.mobile-link').forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.add('hidden');
+                });
+            });
+
+            // 3. Portfolio Gallery Filter Logic
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const galleryItems = document.querySelectorAll('.gallery-item');
+
+            filterButtons.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    // Reset active states
+                    filterButtons.forEach(b => {
+                        b.classList.remove('active', 'bg-gold', 'text-obsidian', 'font-bold');
+                        b.classList.add('bg-charcoal', 'text-gray-300', 'border', 'border-gold/25', 'font-semibold');
+                    });
+
+                    // Activate clicked tab
+                    btn.classList.add('active', 'bg-gold', 'text-obsidian', 'font-bold');
+                    btn.classList.remove('bg-charcoal', 'text-gray-300', 'border', 'border-gold/25', 'font-semibold');
+
+                    const filterValue = btn.getAttribute('data-filter');
+
+                    galleryItems.forEach(item => {
+                        const category = item.getAttribute('data-category');
+                        if (filterValue === 'all' || category === filterValue) {
+                            item.style.display = 'block';
+                            setTimeout(() => {
+                                item.style.opacity = '1';
+                                item.style.transform = 'scale(1)';
+                            }, 20);
+                        } else {
+                            item.style.opacity = '0';
+                            item.style.transform = 'scale(0.95)';
+                            setTimeout(() => {
+                                item.style.display = 'none';
+                            }, 250);
+                        }
+                    });
+                });
+            });
+
+            // 4. Scroll Reveal Animation
+            const revealElements = document.querySelectorAll('.reveal');
+            const revealObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('active');
+                    }
+                });
+            }, { threshold: 0.12 });
+
+            revealElements.forEach(el => revealObserver.observe(el));
+
+            // 5. Load any locally saved booking preview
+            renderSavedBooking();
+
+            // 6. Booking Form Validation & WhatsApp Integration
+            const bookingForm = document.getElementById('booking-form');
+            const saveLocalBtn = document.getElementById('save-local-btn');
+
+            bookingForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                const data = validateAndGetFormData();
+                if (!data) return;
+
+                // Save locally as well for convenience
+                saveBookingToLocalStorage(data);
+
+                // Format clean Arabic WhatsApp message
+                const message = buildWhatsAppMessage(data);
+                const whatsappUrl = `https://wa.me/201090354421?text=${encodeURIComponent(message)}`;
+
+                // Show confirmation modal with summary & direct WhatsApp trigger
+                showConfirmationModal(data, whatsappUrl);
+
+                // Attempt opening WhatsApp in new tab
+                window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
+            });
+
+            saveLocalBtn.addEventListener('click', () => {
+                const data = validateAndGetFormData();
+                if (!data) return;
+
+                saveBookingToLocalStorage(data);
+                showFeedback('تم حفظ بيانات حجزكِ في سجل الجهاز بنجاح! يمكنكِ إرسالها عبر واتساب في أي وقت.', 'success');
+            });
+        });
+
+        // Pre-select Service from Service Cards and scroll smoothly to Booking Form
+        function selectServiceForBooking(serviceName) {
+            const serviceSelect = document.getElementById('serviceType');
+            const bookingSection = document.getElementById('booking');
+
+            if (serviceSelect) {
+                for (let i = 0; i < serviceSelect.options.length; i++) {
+                    if (serviceSelect.options[i].value === serviceName) {
+                        serviceSelect.selectedIndex = i;
+                        break;
+                    }
+                }
+            }
+
+            if (bookingSection) {
+                bookingSection.scrollIntoView({ behavior: 'smooth' });
+                setTimeout(() => {
+                    document.getElementById('clientName')?.focus();
+                }, 650);
+            }
+        }
+
+        // Form Validation Helper
+        function validateAndGetFormData() {
+            const name = document.getElementById('clientName').value.trim();
+            const phone = document.getElementById('clientPhone').value.trim();
+            const service = document.getElementById('serviceType').value;
+            const date = document.getElementById('eventDate').value;
+            const time = document.getElementById('timeSlot').value;
+            const notes = document.getElementById('notes').value.trim();
+
+            if (!name || name.length < 2) {
+                showFeedback('يرجى إدخال الاسم بالكامل بشكل صحيح.', 'error');
+                document.getElementById('clientName').focus();
+                return null;
+            }
+
+            if (!phone || phone.length < 8) {
+                showFeedback('يرجى إدخال رقم هاتف / واتساب صحيح للتواصل معكِ.', 'error');
+                document.getElementById('clientPhone').focus();
+                return null;
+            }
+
+            if (!service) {
+                showFeedback('يرجى اختيار نوع الخدمة أو الباقة المطلوبة.', 'error');
+                document.getElementById('serviceType').focus();
+                return null;
+            }
+
+            if (!date) {
+                showFeedback('يرجى تحديد تاريخ المناسبة.', 'error');
+                document.getElementById('eventDate').focus();
+                return null;
+            }
+
+            if (!time) {
+                showFeedback('يرجى اختيار الوقت المفضل للموعد.', 'error');
+                document.getElementById('timeSlot').focus();
+                return null;
+            }
+
+            hideFeedback();
+            return { name, phone, service, date, time, notes };
+        }
+
+        function buildWhatsAppMessage(data) {
+            let msg = `✨ *طلب حجز جديد - Doaa Yasser Make-up Artist* ✨\n\n`;
+            msg += `👤 *الاسم:* ${data.name}\n`;
+            msg += `📱 *رقم الهاتف:* ${data.phone}\n`;
+            msg += `💄 *الخدمة / الباقة:* ${data.service}\n`;
+            msg += `📅 *تاريخ المناسبة:* ${data.date}\n`;
+            msg += `⏰ *الوقت المفضل:* ${data.time}\n`;
+            if (data.notes) {
+                msg += `📝 *ملاحظات إضافية:* ${data.notes}\n`;
+            }
+            msg += `\nأرجو تأكيد توفر الموعد، وشكراً لكِ 🤍`;
+            return msg;
+        }
+
+        function showFeedback(message, type) {
+            const box = document.getElementById('form-feedback');
+            box.classList.remove('hidden', 'bg-red-950/70', 'border-red-500/40', 'text-red-200', 'bg-emerald-950/70', 'border-emerald-500/40', 'text-emerald-200');
+            
+            if (type === 'error') {
+                box.classList.add('bg-red-950/70', 'border', 'border-red-500/40', 'text-red-200');
+                box.innerHTML = `<i class="fa-solid fa-circle-exclamation text-red-400 text-lg"></i><span>${message}</span>`;
+            } else {
+                box.classList.add('bg-emerald-950/70', 'border', 'border-emerald-500/40', 'text-emerald-200');
+                box.innerHTML = `<i class="fa-solid fa-circle-check text-emerald-400 text-lg"></i><span>${message}</span>`;
+            }
+        }
+
+        function hideFeedback() {
+            document.getElementById('form-feedback').classList.add('hidden');
+        }
+
+        function showConfirmationModal(data, whatsappUrl) {
+            const modal = document.getElementById('confirmation-modal');
+            document.getElementById('modal-client-name').textContent = data.name;
+            document.getElementById('modal-whatsapp-link').href = whatsappUrl;
+
+            document.getElementById('modal-summary').innerHTML = `
+                <p><strong class="text-gold-light">الباقة:</strong> ${data.service}</p>
+                <p><strong class="text-gold-light">التاريخ:</strong> ${data.date}</p>
+                <p><strong class="text-gold-light">الوقت:</strong> ${data.time}</p>
+                <p><strong class="text-gold-light">رقم التواصل:</strong> <span dir="ltr">${data.phone}</span></p>
+                ${data.notes ? `<p><strong class="text-gold-light">ملاحظات:</strong> ${data.notes}</p>` : ''}
+            `;
+
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+        }
+
+        function closeConfirmationModal() {
+            const modal = document.getElementById('confirmation-modal');
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+        }
+
+        function saveBookingToLocalStorage(data) {
+            try {
+                localStorage.setItem('doaa_yasser_last_booking', JSON.stringify(data));
+                renderSavedBooking();
+            } catch (err) {
+                console.warn('Local storage unavailable', err);
+            }
+        }
+
+        function renderSavedBooking() {
+            try {
+                const raw = localStorage.getItem('doaa_yasser_last_booking');
+                const box = document.getElementById('saved-bookings-box');
+                const details = document.getElementById('saved-booking-details');
+                if (!raw || !box || !details) return;
+
+                const data = JSON.parse(raw);
+                details.innerHTML = `
+                    <p><strong>${data.name}</strong> — ${data.service}</p>
+                    <p>التاريخ: ${data.date} | ${data.time}</p>
+                `;
+                box.classList.remove('hidden');
+            } catch (err) {
+                console.warn('Error reading saved booking', err);
+            }
+        }
+
+        function clearSavedBooking() {
+            localStorage.removeItem('doaa_yasser_last_booking');
+            document.getElementById('saved-bookings-box')?.classList.add('hidden');
+        }
+    </script>
+</body>
+</html>
